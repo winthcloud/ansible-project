@@ -1,0 +1,8 @@
+- name: Prometheus
+  hosts: prometheus-test
+  remote_user: mysky
+  become: yes
+  become_method: sudo
+
+  roles:
+    - prometheus

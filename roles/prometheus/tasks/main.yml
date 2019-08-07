@@ -1,0 +1,6 @@
+---
+- name: mkdir
+  file: dest=/tmp/testdir mode=755 state=directory
+
+- name: config prometheus
+  template: src=prom.conf dest=/tmp/ mode=755
